@@ -102,7 +102,7 @@
   transition: opacity 0.3s ease;
 }
 
-.theme-menu__button:disabled {  
+.theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
 }
@@ -143,7 +143,7 @@
 .section-image {
   position: relative;
   width: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
-  height: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);;
+  height: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   border-top: 2px solid var(--accent-color-theme);
   border-bottom: 2px solid var(--accent-color-theme);
 }
@@ -280,7 +280,7 @@
   min-inline-size: 266px;
 }
 
-.dialog {
+.dialog[open] {
   position: fixed;
   display: flex;
   flex-direction: column;

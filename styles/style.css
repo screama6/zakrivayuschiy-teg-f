@@ -174,7 +174,7 @@
 }
 
 @supports((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
-  .section-image {
+  .label {
       text-shadow: none;
       -webkit-text-stroke: 1px var(--stroke-color);
       text-stroke: 1px var(--stroke-color);
@@ -200,7 +200,7 @@
 
 .section-content-button {
   display: flex;
-  gap: 12px;
+  gap: clamp(0.625rem, 0.581rem + 0.1878vw, 0.75rem);
   align-self: end;
   height: 38px;
 }
@@ -281,9 +281,9 @@
 }
 
 .dialog[open] {
-  position: fixed;
   display: flex;
   flex-direction: column;
+  max-width: clamp(21.5625rem, 21.2104rem + 1.5023vw, 22.5625rem);
   gap: 30px;
   margin: auto;
   border: 2px solid var(--accent-color-theme);
@@ -313,6 +313,7 @@ dialog:not([open]) {
   width: 39px;
   height: 39px;
   color: var(--accent-color-theme);
+  align-self: center;
 }
 
 .dialog__text {
@@ -342,7 +343,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(16.3125rem, 15.5202rem + 3.3803vw, 18.5625rem);
+  width: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
   height: 38px;
   border: 2px solid var(--accent-color-theme);
   padding: 9px 17px;
@@ -424,7 +425,7 @@ input::placeholder {
     height: 28px;
   }
 
-  .dialog {
+  .dialog[open] {
     padding: 30px 40px;
   }
 }
